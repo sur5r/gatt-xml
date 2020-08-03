@@ -1,21 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Created with Liquid XML Studio Developer Edition 8.1.7.2743 (http://www.liquid-technologies.com) -->
 <!-- Copyright 2011 Bluetooth SIG, Inc. All rights reserved. -->
-<Descriptor xsi:noNamespaceSchemaLocation="http://schemas.bluetooth.org/Documents/descriptor.xsd"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-type="org.bluetooth.descriptor.gatt.characteristic_extended_properties"
-uuid="2900" name="Characteristic Extended Properties">
+<Descriptor xsi:noNamespaceSchemaLocation="http://schemas.bluetooth.org/Documents/descriptor.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="org.bluetooth.descriptor.gatt.characteristic_extended_properties" uuid="2900" name="Characteristic Extended Properties">
   <InformativeText>
-    <Abstract>The Characteristic Extended Properties descriptor
-    defines additional Characteristic Properties.</Abstract>
-    <InformativeDisclaimer />
-    <Summary>If the Characteristic Extended Properties bit of the
-    Characteristic Properties is set, then this descriptor exists.
-    The Characteristic Extended Properties descriptor is a bit
-    field defining Reliable Write and Writeable Auxiliaries are
-    enabled for the Characteristic. This descriptor is readable
-    without authentication and authorization being
-    required.</Summary>
+    <Abstract>
+        The Characteristic Extended Properties descriptor defines additional Characteristic Properties.            
+		</Abstract>
+    <InformativeDisclaimer/>
+    <Summary>
+        If the Characteristic Extended Properties bit of the Characteristic Properties is set, then this descriptor exists.
+        The Characteristic Extended Properties descriptor is a bit field defining Reliable Write and Writeable Auxiliaries are enabled for the Characteristic.
+        This descriptor is readable without authentication and authorization being required.            
+		</Summary>
   </InformativeText>
   <Value>
     <Field name="Properties">
@@ -32,10 +28,8 @@ uuid="2900" name="Characteristic Extended Properties">
         </Bit>
         <Bit index="1" size="1">
           <Enumerations>
-            <Enumeration key="0"
-            value="Writable Auxiliaries disabled" />
-            <Enumeration key="1"
-            value="Writable Auxiliaries enabled" />
+            <Enumeration key="0" value="Writable Auxiliaries disabled" />
+            <Enumeration key="1" value="Writable Auxiliaries enabled" />
           </Enumerations>
         </Bit>
         <ReservedForFutureUse index="2" size="1" />
@@ -51,7 +45,7 @@ uuid="2900" name="Characteristic Extended Properties">
         <ReservedForFutureUse index="12" size="1" />
         <ReservedForFutureUse index="13" size="1" />
         <ReservedForFutureUse index="14" size="1" />
-      </BitField>
+        </BitField>
     </Field>
   </Value>
 </Descriptor>
